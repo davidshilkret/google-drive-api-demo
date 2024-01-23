@@ -49,7 +49,7 @@ async function loadSavedCredentialsIfExist() {
     return null;
   }
 }
-
+//
 // Serializes credentials to a file comptible with GoogleAUth.fromJSON.
 async function saveCredentials(client) {
   const content = await fsp.readFile(CREDENTIALS_PATH);
